@@ -4,7 +4,7 @@ This respository contains the code for the Things Service
 
 ## Setup
 1. Clone this repository to your local machine using
-    - git clone
+    - git clone https://github.com/asymo/thingsService.git
 
 ## Installation
 When you download a copy of the repository it does not include the dependencies. The `package.json` file contains the project dependencies which can be downloaded using the following command:
