@@ -1,0 +1,346 @@
+[
+  {
+    "description": "    Users can get things",
+    "keyword": "Feature",
+    "name": "Things",
+    "line": 1,
+    "id": "things",
+    "tags": [],
+    "uri": "features\\things.feature",
+    "elements": [
+      {
+        "id": "things;the-service-should-be-running",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "The service should be running",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I GET the root document",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "things;successfull-things-retrieval",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Successfull Things retrieval",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I do a GET for Things",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I will get a Thing with an ID of \"1b78c6b6-1818-11ea-8d71-362b9e155667\"",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I will get a Thing with a value of 10000",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "things;successfully-add-a-new-thing",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Successfully add a new Thing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I POST a new Thing",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the last data element will match the new Thing created",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "things;retrieve-an-individual-thing",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Retrieve an individual Thing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I GET a Thing with an ID of \"1b78c6b6-1818-11ea-8d71-362b9e155667\"",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "only 1 Thing should be returned",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I will get a Thing with the value of 10000",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "things;retrieve-an-individual-thing",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Retrieve an individual Thing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I GET a Thing with an ID of \"3g78c6b6-1818-11ea-8d71-362b9e753951\"",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "only 1 Thing should be returned",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I will get a Thing with the value of 96847",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "things;retrieve-an-individual-thing",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Retrieve an individual Thing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I GET a Thing with an ID of \"1b78c6b6-1818-11ea-8d71-362b9e175698\"",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I SHOULD get a valid response",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "only 1 Thing should be returned",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I will get a Thing with the value of 24000",
+            "match": {
+              "location": "features\\step_definitions\\things-steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
